@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Web People</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo-container">
+                <img src="./TWP assets/Main-Logo.png" alt="Logo" class="logo">
+            </a>
+            <!-- Menu Toggle Button -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 style="font-size: 60px;">Hello!!!<br>We Are Creative Digital Agency.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.</p>
+                <a href="#contact" class="btn">SEND MESSAGE</a>
+            </div>
+            <div class="hero-image">
+                <img src="./TWP assets/Image-1.png" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Work Showcase -->
+    <section id="work" class="work">
+        <h1 style="font-size: 60px; width: 100%;">WORK SHOWCASE.</h1>
+        <div class="container">
+            <div class="work-grid">
+                <!-- Card occupying one grid cell -->
+                <div class="card">
+                    <h2>ARTWORK</h2>
+                    <small>Branding</small>
+                </div>
+                <!-- Images -->
+                <div class="image-container1">
+                    <img src="./TWP assets/Image-2.jpg" alt="Image 2">
+                </div>
+                <div class="image-container">
+                    <img src="./TWP assets/Image-3.jpg" alt="Image 3">
+                </div>
+                <div class="image-container2">
+                    <img src="./TWP assets/Image-4.jpg" alt="Image 4">
+                </div>
+                <div class="image-container">
+                    <img src="./TWP assets/Image-5.jpg" alt="Image 5">
+                </div>
+                <div class="image-container2">
+                    <img src="./TWP assets/Image-6.jpg" alt="Image 6">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">SHOW ME MORE</a>
+        <div class="container">
+            <div class="img">
+                <div>
+                    <img src="./TWP assets/Logo-1.png" alt="Logo-1">
+                </div>
+                <div>
+                    <img src="./TWP assets/Logo-2.png" alt="Logo-2">
+                </div>
+                <div>
+                    <img src="./TWP assets/Logo-3.png" alt="Logo-3">
+                </div>
+                <div>
+                    <img src="./TWP assets/Logo-4.png" alt="Logo-4">
+                </div>
+                <div>
+                    <img src="./TWP assets/Logo-5.png" alt="Logo-5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- About Us -->
+    <section id="about" class="about">
+        <h2>ABOUT US.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="container">
+            <div class="about-grid">
+                <div class="profile">
+                    <img src="./TWP assets/Image-7.jpg" alt="Image 7">
+                    <p>Luke Skywalker</p>
+                    <small>Web Designer</small>
+                </div>
+                <div class="profile">
+                    <img src="./TWP assets/Image-8.jpg" alt="Image 8">
+                    <p>Leia Organa</p>
+                    <small>Graphic Designer</small>
+                </div>
+                <div class="about-info">
+                    <h3>Little About Us</h3>
+                    <p>
+                        We are a team of creative professionals passionate about delivering exceptional design and web
+                        solutions.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact">
+        <h2>CONTACT US.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="container">
+            <div class="contact-grid">
+                <form>
+                    <h2 style="text-align: left;">Send Us Message</h2>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">SEND MESSAGE</button>
+                </form>
+                <img src="./TWP assets/Image-9.jpg" alt="Image 9">
+            </div>
+            
+        </div>
+        <div class="contact-icons">
+            <a href="#" class="icon">
+                <img src="./TWP assets/Icon-1.png" alt="Icon 1">
+            </a>
+            <a href="#" class="icon">
+                <img src="./TWP assets/Icon-2.png" alt="Icon 2">
+            </a>
+            <a href="#" class="icon">
+                <img src="./TWP assets/Icon-3.png" alt="Icon 3">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <img src="./TWP assets/Main-Logo-Footer.png" alt="Footer Logo">
+            <p>© 2020 - thewebpeople. All Rights Reserved.</p>
+            <a href="#top">Back to Top</a>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
